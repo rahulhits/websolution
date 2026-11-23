@@ -73,6 +73,7 @@ section{padding:110px 0}
 .svc:hover{border-color:var(--gold);transform:translateY(-8px);background:rgba(212,162,76,.06)}
 .svc .i{font-size:34px;margin-bottom:16px}.svc h3{font-family:'Cormorant Garamond';font-size:28px;color:var(--gold2);font-weight:600;margin-bottom:8px}.svc p{font-size:14px;color:#b9aca5}
 /* gallery */
+#grid .extra{display:none}#grid.all .extra{display:block}
 .filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:40px}
 .filters button{background:none;border:1px solid #d9c7b2;padding:9px 22px;border-radius:30px;font:inherit;font-size:13px;letter-spacing:1px;cursor:pointer;color:var(--t);transition:.3s}
 .filters button.on,.filters button:hover{background:var(--maroon);border-color:var(--maroon);color:#fff}
@@ -82,7 +83,7 @@ section{padding:110px 0}
 .item:hover img{transform:scale(1.08)}
 .item .cap{position:absolute;inset:auto 0 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-family:'Cormorant Garamond';font-size:22px;opacity:0;transform:translateY(10px);transition:.4s}
 .item:hover .cap{opacity:1;transform:none}
-.item.hide{display:none}
+#grid .item.hide{display:none!important}
 /* lightbox */
 #lb{position:fixed;inset:0;background:rgba(5,3,3,.95);z-index:200;display:none;align-items:center;justify-content:center}
 #lb.on{display:flex}#lb img{max-width:90vw;max-height:84vh;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
@@ -90,6 +91,7 @@ section{padding:110px 0}
 #lb .x{top:16px;right:20px}#lb .p{left:10px}#lb .n{right:10px}
 #lb .c{position:absolute;bottom:22px;color:var(--gold2);font-family:'Cormorant Garamond';font-size:24px}
 /* film */
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}.reel{background:#1a1214;border:1px solid rgba(212,162,76,.25);border-radius:12px;overflow:hidden}.reel iframe{width:100%;height:560px;border:0;display:block;background:#fff}.reel p{padding:12px 16px;color:var(--gold2);font-family:'Cormorant Garamond';font-size:20px}.reels .rx{display:none}.reels.all .rx{display:block}
 .film{position:relative;border-radius:10px;overflow:hidden;max-width:1000px;margin:auto;box-shadow:0 30px 70px rgba(0,0,0,.4)}
 .film img{width:100%}.film .play{position:absolute;inset:0;display:grid;place-items:center}
 .film .play a{width:96px;height:96px;border-radius:50%;background:rgba(212,162,76,.9);display:grid;place-items:center;font-size:34px;color:#2a1a08;animation:pulse 2s infinite}
@@ -154,9 +156,9 @@ footer .credit a{color:var(--gold)}
 </div></nav>
 
 <header class="hero" id="home">
-  <div class="slide on" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSbDKSl1D75H5gE-CevsCyqWROAYBGaSGmwQhnEvTZs2ljF2BIAkK-qH4p15Hg5UaAU8PcidQxeLxqxZ8VeF8x3wRiBj9VmgJ-4MkllI8vNRGuhkTUcKKWz6uFZOUr0CkW4_Vf=w1920),url(images/hero1.jpg)"></div>
-  <div class="slide" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ6bKoiVhG9FcL_oukMgilAtepRH9dDPSeZOh-MVX71zqHT03k7OK0xyGngpPWWbc5c_gn-zRHHhQqAi9JJgcAUG4c10B54r5_zQjLYgrN4pofmjUkFdnqTDdYf5M9ZLJzJ2g=w1920),url(images/hero2.jpg)"></div>
-  <div class="slide" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1920),url(images/hero3.jpg)"></div>
+  <div class="slide on" style="background-image:url(ig03.jpg)"></div>
+  <div class="slide" style="background-image:url(ig08.jpg)"></div>
+  <div class="slide" style="background-image:url(ig06.jpg)"></div>
   <div class="hero-in">
     <div class="pre">Wedding Photography & Films</div>
     <h1>Every Love Story<br>Deserves to be <i>Timeless</i></h1>
@@ -192,26 +194,121 @@ footer .credit a{color:var(--gold)}
 
 <section id="gallery"><div class="wrap">
   <div class="title"><small>Portfolio</small><h2>Moments We've Captured</h2><p>A glimpse of the love stories we've had the honour to tell.</p><div class="orn">✦</div></div>
-  <div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="bride">Bride</button><button data-f="couple">Couple</button><button data-f="rituals">Rituals</button><button data-f="maternity">Maternity</button><button data-f="studio">Studio</button></div>
+  <div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="bride">Bride</button><button data-f="couple">Couple</button><button data-f="prewedding">Pre-Wedding</button><button data-f="rituals">Rituals</button><button data-f="fashion">Fashion</button></div>
   <div class="masonry" id="grid">
-    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSbDKSl1D75H5gE-CevsCyqWROAYBGaSGmwQhnEvTZs2ljF2BIAkK-qH4p15Hg5UaAU8PcidQxeLxqxZ8VeF8x3wRiBj9VmgJ-4MkllI8vNRGuhkTUcKKWz6uFZOUr0CkW4_Vf=w1200" alt="Bridal Portrait" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bridal Portrait</div></div>
-    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ6bKoiVhG9FcL_oukMgilAtepRH9dDPSeZOh-MVX71zqHT03k7OK0xyGngpPWWbc5c_gn-zRHHhQqAi9JJgcAUG4c10B54r5_zQjLYgrN4pofmjUkFdnqTDdYf5M9ZLJzJ2g=w1200" alt="The Royal Bride" loading="lazy" referrerpolicy="no-referrer"><div class="cap">The Royal Bride</div></div>
-    <div class="item rv" data-c="couple"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RrzGouZQ2dYA2A93sCWvPNy5ld1FgjS7ffw1ZXa98RjTrdiOwBzkuH1d84Eyq-e22tDcgRbwvEB3ehTNOgniCASsMum8-KHQZ9_LfFUZ7vAM9AyCEcl28CJJPQcOYoKSpLjB09=w1200" alt="Varmala Moments" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Varmala Moments</div></div>
-    <div class="item rv" data-c="rituals"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1200" alt="Wedding Ceremony" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Wedding Ceremony</div></div>
-    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBEehH8QQNtHKPIGYMMZCSlVioWfpAwpjlvEMhaouoxa2JF2rh0Mp8pwXVCqhvadlk7us1ZkYDnBjLeR3mr2hcAmR4sO_QxXiisEUJbL8BTWh9mby9Lj3D2M6DcUPwUbTqd5Qu=w1200" alt="Bridal Getting Ready" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bridal Getting Ready</div></div>
-    <div class="item rv" data-c="rituals"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RapkbuNehgUusjcJWW_a2aWk0kiTOlfdVwVbqaur3SjVup7N6doK8TLyZafkW74a_Ok7_LUx3R9INdZ2oTHGyxIHNdyS-8J5MywuVsJ0GfGEAl7u704FvRBznizUbelSOyL4WG6Q=w1200" alt="Haldi & Mehendi Decor" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Haldi & Mehendi Decor</div></div>
-    <div class="item rv" data-c="maternity"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiVMZoisvk1zyawmLccUjp7L5jNLqrVw5qX2dyev9cmUkvpHWaYy8HY-HGqmOR7HaX_d344rF0SQwH_vfyw0hO6zjDN2RPbBXMiT174DwSE3wCPP-KAhZvCgyWDuB5QXMlI8w=w1200" alt="Baby Announcement" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Baby Announcement</div></div>
-    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tu2IhQloVokT4B5pwJzeNzq5g7zfdnoSmNgVgwub0Cp3JW2A3pWy3E7A7Tn6RKrtKkjkMexbdHtIt868E6GjfIc_YJTCJgzsjQMaz46EksZ81w2FnXKLX6fIsfGw519wPCC8M=w1200" alt="Bride & Her Lehenga" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bride & Her Lehenga</div></div>
-    <div class="item rv" data-c="maternity"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sik1IoR44vQb0nOtlRk-fdRBA-ONdOt78OpnCXks8iP5494-60aFFpEYHyJ6exmnRpHq-JQ9K5LYrQWjqZbmnTyNR1sM06AFrU5YytvMKC0t5trLpd13KHqnXBqJ-zgRtX54KY=w1200" alt="Maternity Shoot" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Maternity Shoot</div></div>
-    <div class="item rv" data-c="studio"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StrFwbMTphKjSPfAUAmoZY0hxGze2mPjf_96wrfRSOjmW0TxRnZMsrxgzFEMYfTEuiMQIJFOBI80DmE8BM8BLWuNLKo3z4bMcK8afn8tSAaoGxXT_SLUJD9eTG1-0dOPBXCJC375EIH14E=w1200" alt="Our Studio, Munger" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Our Studio, Munger</div></div>
+    <div class="item" data-c="bride"><img src="ig01.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="couple"><img src="ig02.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="couple"><img src="ig03.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="bride"><img src="ig04.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="couple"><img src="ig05.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="bride"><img src="ig06.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="couple"><img src="ig07.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="bride"><img src="ig08.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g01.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="prewedding"><img src="gallery/g02.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item" data-c="prewedding"><img src="gallery/g03.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g04.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="couple"><img src="gallery/g05.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="rituals"><img src="gallery/g06.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item" data-c="rituals"><img src="gallery/g07.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item" data-c="fashion"><img src="gallery/g08.jpg" alt="ShaadiNama Fashion Shoot" loading="lazy"><div class="cap">Fashion Shoot</div></div>
+    <div class="item" data-c="couple"><img src="gallery/g09.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="couple"><img src="gallery/g10.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item" data-c="prewedding"><img src="gallery/g11.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g12.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g13.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g14.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g15.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item" data-c="bride"><img src="gallery/g16.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g17.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g18.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g19.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g20.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g21.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g22.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g23.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g24.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="fashion"><img src="gallery/g25.jpg" alt="ShaadiNama Fashion Shoot" loading="lazy"><div class="cap">Fashion Shoot</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g26.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g27.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g28.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g29.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g30.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g31.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g32.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g33.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g34.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="fashion"><img src="gallery/g35.jpg" alt="ShaadiNama Fashion Shoot" loading="lazy"><div class="cap">Fashion Shoot</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g36.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g37.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g38.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g39.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g40.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g41.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g42.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g43.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g44.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g45.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g46.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g47.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g48.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g49.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g50.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g51.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g52.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g53.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g54.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g55.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g56.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g57.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g58.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g59.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g60.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g61.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g62.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g63.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g64.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g65.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g66.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g67.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g68.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="prewedding"><img src="gallery/g69.jpg" alt="ShaadiNama Pre-Wedding" loading="lazy"><div class="cap">Pre-Wedding</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g70.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g71.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g72.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g73.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="couple"><img src="gallery/g74.jpg" alt="ShaadiNama Wedding Couple" loading="lazy"><div class="cap">Wedding Couple</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g75.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="rituals"><img src="gallery/g76.jpg" alt="ShaadiNama Wedding Rituals" loading="lazy"><div class="cap">Wedding Rituals</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g77.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
+    <div class="item extra" data-c="bride"><img src="gallery/g78.jpg" alt="ShaadiNama Bridal Portrait" loading="lazy"><div class="cap">Bridal Portrait</div></div>
   </div>
+  <div style="text-align:center;margin-top:34px"><button class="btn btn-gold" id="moreBtn" onclick="document.getElementById('grid').classList.add('all');this.parentNode.remove()">View All 86 Photos</button></div>
 </div></section>
 
 <div id="lb"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button><div class="c"></div></div>
 
 <section id="films" class="dark"><div class="wrap">
   <div class="title"><small>Wedding Films</small><h2>Watch Love in Motion</h2><p>Cinematic wedding films and highlight teasers – relive your day like a movie.</p><div class="orn">✦</div></div>
-  <div class="film rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1600" onerror="this.src='images/film.jpg'" alt="Wedding film" style="aspect-ratio:16/9;object-fit:cover"><div class="play"><a href="https://www.instagram.com/shaadi_nama/" target="_blank" aria-label="Watch films">▶</a></div></div>
+  <div class="reels">
+    <div class="reel"><iframe src="https://www.instagram.com/reel/DB5UH5KvJqz/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Forever Was Written in the Stars"></iframe><p>Forever Was Written in the Stars</p></div>
+    <div class="reel"><iframe src="https://www.instagram.com/reel/CqKgIQ5od7B/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Ankita × Atin – Cinematic Teaser"></iframe><p>Ankita × Atin – Cinematic Teaser</p></div>
+    <div class="reel"><iframe src="https://www.instagram.com/reel/CbrTKSQg24n/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Sanket & Ankita – A Picture Perfect Day"></iframe><p>Sanket & Ankita – A Picture Perfect Day</p></div>
+    <div class="reel"><iframe src="https://www.instagram.com/reel/C7BcfWgPPPJ/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Sagar × Ankita"></iframe><p>Sagar × Ankita</p></div>
+    <div class="reel"><iframe src="https://www.instagram.com/reel/CloNEEwJkQK/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Isha × Sumit – Pre-Wedding Film"></iframe><p>Isha × Sumit – Pre-Wedding Film</p></div>
+    <div class="reel"><iframe src="https://www.instagram.com/reel/ClhGje1LQ1O/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Amit × Sima"></iframe><p>Amit × Sima</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/Cjp4RxKIQe3/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Engagement Day"></iframe><p>Engagement Day</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/ChrXfeuPb42/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Krishna ❤ Pooja"></iframe><p>Krishna ❤ Pooja</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/CbZxIMEAIkF/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Suraj & Sanskriti – Engagement"></iframe><p>Suraj & Sanskriti – Engagement</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/CuMk9ZHr9Wk/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Sagar × Ankita"></iframe><p>Sagar × Ankita</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/DBs9BVYsQDB/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Wedding Highlights"></iframe><p>Wedding Highlights</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/DA-5JPmvWZB/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Wedding Highlights"></iframe><p>Wedding Highlights</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/Czi3U3VPlpM/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Wedding Highlights"></iframe><p>Wedding Highlights</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/CjV80FEMPHT/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Inside ShaadiNama Studio"></iframe><p>Inside ShaadiNama Studio</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/CS_7cNCotHE/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Cinematic Wedding Film"></iframe><p>Cinematic Wedding Film</p></div>
+    <div class="reel rx"><iframe src="https://www.instagram.com/reel/CHW0ivdjYPP/embed/" loading="lazy" allowtransparency="true" allowfullscreen scrolling="no" title="Priyanka & Abhishek"></iframe><p>Priyanka & Abhishek</p></div>
+  </div>
+  <div style="text-align:center;margin-top:34px"><button class="btn btn-gold" onclick="document.querySelector('.reels').classList.add('all');this.parentNode.remove()">Watch All 16 Films</button> <a class="btn btn-line" href="https://www.instagram.com/shaadi_nama/reels/" target="_blank">More on Instagram</a></div>
 </div></section>
 
 <section id="packages"><div class="wrap">
@@ -277,11 +374,11 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return
  e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let v=0;const st=Math.max(1,Math.ceil(n/60));const t=setInterval(()=>{v=Math.min(n,v+st);c.textContent=v+(v===n?'+':'');if(v===n)clearInterval(t)},25)});io.unobserve(e.target)}),{threshold:.15});
 document.querySelectorAll('.rv').forEach(e=>io.observe(e));
 // filters
-document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;
+document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;if(f!=='all'){document.getElementById('grid').classList.add('all');document.getElementById('moreBtn')?.parentNode.remove();}
  document.querySelectorAll('#grid .item').forEach(it=>it.classList.toggle('hide',f!=='all'&&it.dataset.c!==f))});
 // lightbox
 const lb=document.getElementById('lb'),li=lb.querySelector('img'),lc=lb.querySelector('.c');let cur=0;
-const vis=()=>[...document.querySelectorAll('#grid .item:not(.hide)')];
+const vis=()=>[...document.querySelectorAll('#grid .item')].filter(i=>i.offsetParent!==null);
 const show=i=>{const v=vis();cur=(i+v.length)%v.length;li.src=v[cur].querySelector('img').src;lc.textContent=v[cur].querySelector('.cap').textContent;lb.classList.add('on')};
 document.querySelectorAll('#grid .item').forEach(it=>it.onclick=()=>show(vis().indexOf(it)));
 lb.querySelector('.x').onclick=()=>lb.classList.remove('on');lb.querySelector('.p').onclick=()=>show(cur-1);lb.querySelector('.n').onclick=()=>show(cur+1);
