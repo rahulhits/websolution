@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ShaadiNama Studio – Wedding Photography & Films, Munger</title>
+<meta name="description" content="ShaadiNama Studio, Munger – wedding, pre-wedding, candid photography, cinematic films and drone shoots across Bihar. Book your date on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#D4A24C;--gold2:#f3d08a;--maroon:#6d0f22;--dark:#0d0a0b;--dark2:#17110f;--cream:#fbf5ec;--t:#2a1f1c;--m:#7b6b63}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--t);background:var(--cream);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.wrap{max-width:1200px;margin:auto;padding:0 22px}
+/* preloader */
+#pre{position:fixed;inset:0;background:var(--dark);z-index:999;display:grid;place-items:center;transition:opacity .8s}
+#pre .ring{width:70px;height:70px;border-radius:50%;border:2px solid rgba(212,162,76,.25);border-top-color:var(--gold);animation:spin 1s linear infinite}
+#pre p{color:var(--gold);font-family:'Cormorant Garamond';font-size:26px;letter-spacing:6px;margin-top:18px;text-align:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s;padding:22px 0}
+nav.solid{background:rgba(13,10,11,.92);backdrop-filter:blur(8px);padding:12px 0;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{color:#fff;display:flex;align-items:center;gap:12px}
+.brand .seal{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#c0122f,#7a0a1c);display:grid;place-items:center;font-family:'Cormorant Garamond';font-style:italic;font-weight:700;font-size:20px;color:#fff;border:1px solid var(--gold)}
+.brand b{font-family:'Cormorant Garamond';font-size:26px;font-weight:700;letter-spacing:1px;display:block;line-height:1}
+.brand small{font-size:10px;letter-spacing:4px;color:var(--gold2)}
+.menu{display:flex;gap:30px;color:#eee;font-size:14px;letter-spacing:1px;text-transform:uppercase}
+.menu a{position:relative}.menu a:after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:.3s}.menu a:hover:after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:40px;font-size:14px;font-weight:500;letter-spacing:1px;text-transform:uppercase;transition:.3s;cursor:pointer;border:0}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2a1a08}.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(212,162,76,.4)}
+.btn-line{border:1px solid rgba(255,255,255,.7);color:#fff}.btn-line:hover{background:#fff;color:var(--dark)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+/* hero */
+.hero{position:relative;height:100vh;min-height:620px;overflow:hidden;background:var(--dark)}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center 30%;opacity:0;transform:scale(1.12);transition:opacity 1.6s ease,transform 8s ease}
+.slide.on{opacity:1;transform:scale(1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.25) 40%,rgba(0,0,0,.75))}
+.hero-in{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:0 20px}
+.hero-in .pre{letter-spacing:8px;font-size:13px;color:var(--gold2);text-transform:uppercase;margin-bottom:18px}
+.hero-in h1{font-family:'Cormorant Garamond';font-weight:600;font-size:clamp(44px,7vw,92px);line-height:1.02;margin-bottom:18px}
+.hero-in h1 i{color:var(--gold2)}
+.hero-in p{max-width:620px;opacity:.9;margin-bottom:34px;font-weight:300}
+.hero-in .cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.dots{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:10px}
+.dots span{width:34px;height:3px;background:rgba(255,255,255,.35);cursor:pointer;transition:.3s}.dots span.on{background:var(--gold)}
+.scroll{position:absolute;bottom:34px;right:40px;z-index:3;color:#fff;font-size:11px;letter-spacing:3px;writing-mode:vertical-rl}
+/* sections */
+section{padding:110px 0}
+.title{text-align:center;margin-bottom:60px}
+.title small{color:var(--gold);letter-spacing:6px;font-size:12px;text-transform:uppercase}
+.title h2{font-family:'Cormorant Garamond';font-size:clamp(36px,5vw,56px);font-weight:600;line-height:1.1;margin:8px 0 14px}
+.title p{color:var(--m);max-width:620px;margin:auto}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin-top:10px}.orn:before,.orn:after{content:"";width:60px;height:1px;background:var(--gold)}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.about .pic{position:relative}.about .pic img{border-radius:200px 200px 10px 10px;box-shadow:0 30px 60px rgba(0,0,0,.25)}
+.about .pic:before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold);border-radius:200px 200px 10px 10px;z-index:-1}
+.about h2{font-family:'Cormorant Garamond';font-size:48px;line-height:1.1;margin:8px 0 18px;font-weight:600}
+.about p{color:var(--m);margin-bottom:16px}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.counts div{border-left:2px solid var(--gold);padding-left:16px}.counts b{font-family:'Cormorant Garamond';font-size:42px;color:var(--maroon);display:block;line-height:1}.counts span{font-size:13px;color:var(--m)}
+/* services */
+.dark{background:var(--dark);color:#eee}.dark .title p{color:#b9aca5}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{border:1px solid rgba(212,162,76,.25);padding:38px 30px;border-radius:6px;transition:.4s;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0))}
+.svc:hover{border-color:var(--gold);transform:translateY(-8px);background:rgba(212,162,76,.06)}
+.svc .i{font-size:34px;margin-bottom:16px}.svc h3{font-family:'Cormorant Garamond';font-size:28px;color:var(--gold2);font-weight:600;margin-bottom:8px}.svc p{font-size:14px;color:#b9aca5}
+/* gallery */
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.filters button{background:none;border:1px solid #d9c7b2;padding:9px 22px;border-radius:30px;font:inherit;font-size:13px;letter-spacing:1px;cursor:pointer;color:var(--t);transition:.3s}
+.filters button.on,.filters button:hover{background:var(--maroon);border-color:var(--maroon);color:#fff}
+.masonry{columns:4 260px;column-gap:16px}
+.item{break-inside:avoid;margin-bottom:16px;position:relative;overflow:hidden;border-radius:6px;cursor:zoom-in;transition:opacity .4s,transform .4s}
+.item img{width:100%;transition:transform .8s}
+.item:hover img{transform:scale(1.08)}
+.item .cap{position:absolute;inset:auto 0 0 0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-family:'Cormorant Garamond';font-size:22px;opacity:0;transform:translateY(10px);transition:.4s}
+.item:hover .cap{opacity:1;transform:none}
+.item.hide{display:none}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(5,3,3,.95);z-index:200;display:none;align-items:center;justify-content:center}
+#lb.on{display:flex}#lb img{max-width:90vw;max-height:84vh;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lb button{position:absolute;background:none;border:0;color:#fff;font-size:44px;cursor:pointer;padding:10px 18px}
+#lb .x{top:16px;right:20px}#lb .p{left:10px}#lb .n{right:10px}
+#lb .c{position:absolute;bottom:22px;color:var(--gold2);font-family:'Cormorant Garamond';font-size:24px}
+/* film */
+.film{position:relative;border-radius:10px;overflow:hidden;max-width:1000px;margin:auto;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.film img{width:100%}.film .play{position:absolute;inset:0;display:grid;place-items:center}
+.film .play a{width:96px;height:96px;border-radius:50%;background:rgba(212,162,76,.9);display:grid;place-items:center;font-size:34px;color:#2a1a08;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,162,76,.6)}70%{box-shadow:0 0 0 26px rgba(212,162,76,0)}100%{box-shadow:0 0 0 0 rgba(212,162,76,0)}}
+/* packages */
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.pack{background:#fff;border-radius:10px;padding:42px 34px;text-align:center;box-shadow:0 14px 40px rgba(60,20,10,.08);position:relative;transition:.4s}
+.pack:hover{transform:translateY(-8px)}
+.pack.best{background:linear-gradient(160deg,#3b0812,#6d0f22);color:#fff;transform:scale(1.04)}
+.pack.best .pr{color:var(--gold2)}.pack.best li{color:#f1dfd3}
+.pack .tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#2a1a08;font-size:12px;letter-spacing:2px;padding:6px 18px;border-radius:20px;font-weight:600}
+.pack h3{font-family:'Cormorant Garamond';font-size:32px;font-weight:600}
+.pr{font-family:'Cormorant Garamond';font-size:48px;color:var(--maroon);font-weight:700;margin:6px 0 18px}
+.pr small{font-size:16px;font-family:Poppins;font-weight:400;opacity:.7}
+.pack ul{list-style:none;margin-bottom:26px;text-align:left}.pack li{padding:7px 0;border-bottom:1px dashed rgba(150,120,100,.3);font-size:14px;color:var(--m)}.pack li:before{content:"✦ ";color:var(--gold)}
+/* testimonials */
+.tst{max-width:820px;margin:auto;text-align:center;position:relative;min-height:220px}
+.q{position:absolute;inset:0;opacity:0;transition:opacity .8s}.q.on{opacity:1;position:relative}
+.q p{font-family:'Cormorant Garamond';font-style:italic;font-size:clamp(22px,3vw,30px);line-height:1.5;color:#f1e6dc}
+.q b{display:block;margin-top:20px;color:var(--gold2);letter-spacing:3px;font-size:13px;text-transform:uppercase}
+.stars{color:var(--gold);letter-spacing:4px;margin-bottom:16px}
+/* insta band */
+.band{background:linear-gradient(120deg,#6d0f22,#a3162f,#d4a24c);color:#fff;text-align:center;padding:80px 20px}
+.band h2{font-family:'Cormorant Garamond';font-size:clamp(34px,5vw,54px);font-weight:600;line-height:1.1;margin-bottom:12px}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:50px}
+.cinfo .row{display:flex;gap:16px;margin-bottom:22px}.cinfo .ic{width:52px;height:52px;flex:none;border-radius:50%;background:var(--maroon);color:#fff;display:grid;place-items:center;font-size:20px}
+.cinfo h3{font-family:'Cormorant Garamond';font-size:40px;font-weight:600;line-height:1.1;margin-bottom:24px}
+form{background:#fff;padding:40px;border-radius:10px;box-shadow:0 14px 40px rgba(60,20,10,.08)}
+form h3{font-family:'Cormorant Garamond';font-size:34px;font-weight:600;margin-bottom:20px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,select,textarea{width:100%;padding:14px 16px;border:1px solid #e5d6c6;border-radius:6px;font:inherit;font-size:14px;margin-bottom:14px;background:#fffdf9}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold)}
+.map{width:100%;height:240px;border:0;border-radius:10px;margin-top:10px;filter:sepia(.3)}
+footer{background:var(--dark);color:#a89a92;text-align:center;padding:60px 20px 30px;font-size:14px}
+footer .brand{justify-content:center;margin-bottom:16px}
+footer .soc{display:flex;justify-content:center;gap:14px;margin:20px 0}
+footer .soc a{width:42px;height:42px;border:1px solid rgba(212,162,76,.4);border-radius:50%;display:grid;place-items:center;color:var(--gold2)}
+footer .credit{border-top:1px solid #2a2220;margin-top:26px;padding-top:20px;font-size:12px}
+footer .credit a{color:var(--gold)}
+.wa{position:fixed;right:22px;bottom:22px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:30px;box-shadow:0 10px 28px rgba(0,0,0,.3);animation:pulse2 2s infinite}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.demo{position:fixed;left:16px;bottom:16px;z-index:90;background:rgba(13,10,11,.85);color:#e8d9c7;font-size:12px;padding:8px 14px;border-radius:20px;border:1px solid rgba(212,162,76,.4)}
+.rv{opacity:0;transform:translateY(40px);transition:1s}.rv.show{opacity:1;transform:none}
+@media(max-width:960px){
+ .menu{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(13,10,11,.97);flex-direction:column;padding:24px;gap:18px}.menu.open{display:flex}
+ .burger{display:block}.nav-btn{display:none}
+ .about,.contact{grid-template-columns:1fr;gap:50px}.services,.packs{grid-template-columns:1fr}
+ .pack.best{transform:none}.scroll{display:none}
+}
+@media(max-width:560px){section{padding:80px 0}.two{grid-template-columns:1fr}.counts b{font-size:32px}form{padding:26px}.demo{display:none}}
+</style>
+</head>
+<body>
+<div id="pre"><div><div class="ring" style="margin:auto"></div><p>SHAADINAMA</p></div></div>
+
+<nav id="nav"><div class="wrap">
+  <a href="#home" class="brand"><div class="seal">SN</div><div><b>ShaadiNama</b><small>STUDIO • MUNGER</small></div></a>
+  <div class="menu" id="menu"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#films">Films</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div>
+  <a href="#contact" class="btn btn-gold nav-btn">Book Your Date</a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</div></nav>
+
+<header class="hero" id="home">
+  <div class="slide on" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSbDKSl1D75H5gE-CevsCyqWROAYBGaSGmwQhnEvTZs2ljF2BIAkK-qH4p15Hg5UaAU8PcidQxeLxqxZ8VeF8x3wRiBj9VmgJ-4MkllI8vNRGuhkTUcKKWz6uFZOUr0CkW4_Vf=w1920),url(images/hero1.jpg)"></div>
+  <div class="slide" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ6bKoiVhG9FcL_oukMgilAtepRH9dDPSeZOh-MVX71zqHT03k7OK0xyGngpPWWbc5c_gn-zRHHhQqAi9JJgcAUG4c10B54r5_zQjLYgrN4pofmjUkFdnqTDdYf5M9ZLJzJ2g=w1920),url(images/hero2.jpg)"></div>
+  <div class="slide" style="background-image:url(https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1920),url(images/hero3.jpg)"></div>
+  <div class="hero-in">
+    <div class="pre">Wedding Photography & Films</div>
+    <h1>Every Love Story<br>Deserves to be <i>Timeless</i></h1>
+    <p>From the first haldi smile to the final vidaai tear – we capture the emotions, colours and traditions of your big day, beautifully.</p>
+    <div class="cta"><a href="#gallery" class="btn btn-gold">View Our Work</a><a href="https://wa.me/919931732890?text=Hi%20ShaadiNama%20Studio%2C%20I%20want%20to%20check%20availability%20for%20my%20wedding%20date" target="_blank" class="btn btn-line">Check Availability</a></div>
+  </div>
+  <div class="dots" id="dots"><span class="on"></span><span></span><span></span></div>
+  <div class="scroll">SCROLL ↓</div>
+</header>
+
+<section id="about"><div class="wrap about">
+  <div class="pic rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StrFwbMTphKjSPfAUAmoZY0hxGze2mPjf_96wrfRSOjmW0TxRnZMsrxgzFEMYfTEuiMQIJFOBI80DmE8BM8BLWuNLKo3z4bMcK8afn8tSAaoGxXT_SLUJD9eTG1-0dOPBXCJC375EIH14E=w1000" onerror="this.src='images/about.jpg'" alt="ShaadiNama Studio, Munger" style="aspect-ratio:4/5;object-fit:cover"></div>
+  <div class="rv">
+    <small style="color:var(--gold);letter-spacing:6px;font-size:12px">ABOUT US</small>
+    <h2>We Don't Just Click Photos,<br>We Tell Your Story</h2>
+    <p>ShaadiNama Studio is a passionate team of wedding photographers and filmmakers from Munger, Bihar. We blend traditional coverage with candid storytelling and cinematic films, so every ritual and every emotion is preserved forever.</p>
+    <p>Whether it's an intimate ceremony at home or a grand celebration, we travel across Bihar to make your memories shine.</p>
+    <div class="counts"><div><b>4.6★</b><span>Google Rating</span></div><div><b data-n="63">0</b><span>Google Reviews</span></div><div><b>Bihar</b><span>We Travel Anywhere</span></div></div>
+  </div>
+</div></section>
+
+<section id="services" class="dark"><div class="wrap">
+  <div class="title"><small>What We Do</small><h2>Our Services</h2><div class="orn">✦</div></div>
+  <div class="services">
+    <div class="svc rv"><div class="i">💍</div><h3>Wedding Photography</h3><p>Complete coverage of every ritual – tilak, haldi, mehendi, baraat, varmala, phere and vidaai.</p></div>
+    <div class="svc rv"><div class="i">📸</div><h3>Candid Photography</h3><p>Natural, emotional moments captured without poses – the laughs, tears and stolen glances.</p></div>
+    <div class="svc rv"><div class="i">🎬</div><h3>Cinematic Films</h3><p>Story-style wedding films and teasers with music, edited like a movie.</p></div>
+    <div class="svc rv"><div class="i">🌸</div><h3>Pre-Wedding &amp; Maternity</h3><p>Romantic pre-wedding shoots, maternity and baby announcement shoots with styling and creative direction.</p></div>
+    <div class="svc rv"><div class="i">🚁</div><h3>Drone Coverage</h3><p>Breathtaking aerial shots of your venue, baraat and celebrations.</p></div>
+    <div class="svc rv"><div class="i">📖</div><h3>Premium Albums</h3><p>Luxury designer albums printed on high-quality paper to cherish for a lifetime.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="title"><small>Portfolio</small><h2>Moments We've Captured</h2><p>A glimpse of the love stories we've had the honour to tell.</p><div class="orn">✦</div></div>
+  <div class="filters" id="filters"><button class="on" data-f="all">All</button><button data-f="bride">Bride</button><button data-f="couple">Couple</button><button data-f="rituals">Rituals</button><button data-f="maternity">Maternity</button><button data-f="studio">Studio</button></div>
+  <div class="masonry" id="grid">
+    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TSbDKSl1D75H5gE-CevsCyqWROAYBGaSGmwQhnEvTZs2ljF2BIAkK-qH4p15Hg5UaAU8PcidQxeLxqxZ8VeF8x3wRiBj9VmgJ-4MkllI8vNRGuhkTUcKKWz6uFZOUr0CkW4_Vf=w1200" alt="Bridal Portrait" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bridal Portrait</div></div>
+    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RQ6bKoiVhG9FcL_oukMgilAtepRH9dDPSeZOh-MVX71zqHT03k7OK0xyGngpPWWbc5c_gn-zRHHhQqAi9JJgcAUG4c10B54r5_zQjLYgrN4pofmjUkFdnqTDdYf5M9ZLJzJ2g=w1200" alt="The Royal Bride" loading="lazy" referrerpolicy="no-referrer"><div class="cap">The Royal Bride</div></div>
+    <div class="item rv" data-c="couple"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RrzGouZQ2dYA2A93sCWvPNy5ld1FgjS7ffw1ZXa98RjTrdiOwBzkuH1d84Eyq-e22tDcgRbwvEB3ehTNOgniCASsMum8-KHQZ9_LfFUZ7vAM9AyCEcl28CJJPQcOYoKSpLjB09=w1200" alt="Varmala Moments" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Varmala Moments</div></div>
+    <div class="item rv" data-c="rituals"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1200" alt="Wedding Ceremony" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Wedding Ceremony</div></div>
+    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBEehH8QQNtHKPIGYMMZCSlVioWfpAwpjlvEMhaouoxa2JF2rh0Mp8pwXVCqhvadlk7us1ZkYDnBjLeR3mr2hcAmR4sO_QxXiisEUJbL8BTWh9mby9Lj3D2M6DcUPwUbTqd5Qu=w1200" alt="Bridal Getting Ready" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bridal Getting Ready</div></div>
+    <div class="item rv" data-c="rituals"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RapkbuNehgUusjcJWW_a2aWk0kiTOlfdVwVbqaur3SjVup7N6doK8TLyZafkW74a_Ok7_LUx3R9INdZ2oTHGyxIHNdyS-8J5MywuVsJ0GfGEAl7u704FvRBznizUbelSOyL4WG6Q=w1200" alt="Haldi & Mehendi Decor" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Haldi & Mehendi Decor</div></div>
+    <div class="item rv" data-c="maternity"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QiVMZoisvk1zyawmLccUjp7L5jNLqrVw5qX2dyev9cmUkvpHWaYy8HY-HGqmOR7HaX_d344rF0SQwH_vfyw0hO6zjDN2RPbBXMiT174DwSE3wCPP-KAhZvCgyWDuB5QXMlI8w=w1200" alt="Baby Announcement" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Baby Announcement</div></div>
+    <div class="item rv" data-c="bride"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tu2IhQloVokT4B5pwJzeNzq5g7zfdnoSmNgVgwub0Cp3JW2A3pWy3E7A7Tn6RKrtKkjkMexbdHtIt868E6GjfIc_YJTCJgzsjQMaz46EksZ81w2FnXKLX6fIsfGw519wPCC8M=w1200" alt="Bride & Her Lehenga" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Bride & Her Lehenga</div></div>
+    <div class="item rv" data-c="maternity"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sik1IoR44vQb0nOtlRk-fdRBA-ONdOt78OpnCXks8iP5494-60aFFpEYHyJ6exmnRpHq-JQ9K5LYrQWjqZbmnTyNR1sM06AFrU5YytvMKC0t5trLpd13KHqnXBqJ-zgRtX54KY=w1200" alt="Maternity Shoot" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Maternity Shoot</div></div>
+    <div class="item rv" data-c="studio"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9StrFwbMTphKjSPfAUAmoZY0hxGze2mPjf_96wrfRSOjmW0TxRnZMsrxgzFEMYfTEuiMQIJFOBI80DmE8BM8BLWuNLKo3z4bMcK8afn8tSAaoGxXT_SLUJD9eTG1-0dOPBXCJC375EIH14E=w1200" alt="Our Studio, Munger" loading="lazy" referrerpolicy="no-referrer"><div class="cap">Our Studio, Munger</div></div>
+  </div>
+</div></section>
+
+<div id="lb"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button><div class="c"></div></div>
+
+<section id="films" class="dark"><div class="wrap">
+  <div class="title"><small>Wedding Films</small><h2>Watch Love in Motion</h2><p>Cinematic wedding films and highlight teasers – relive your day like a movie.</p><div class="orn">✦</div></div>
+  <div class="film rv"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TGWEnR6LFvA90IhPIVX4w78612lsfHxLpMhjj0dvm1856CIWPaKXtBQS2CSXyCdIY-5CvyAP7RcpIPIaAZn5n1fBrkkAL328mB7EyHmlswQ-ofiGYNL0EuoC4faSYcXfIK743YOQ=w1600" onerror="this.src='images/film.jpg'" alt="Wedding film" style="aspect-ratio:16/9;object-fit:cover"><div class="play"><a href="https://www.instagram.com/shaadi_nama/" target="_blank" aria-label="Watch films">▶</a></div></div>
+</div></section>
+
+<section id="packages"><div class="wrap">
+  <div class="title"><small>Packages</small><h2>Choose Your Package</h2><p>Sample packages – final price depends on date, venue and requirements.</p><div class="orn">✦</div></div>
+  <div class="packs">
+    <div class="pack rv"><h3>Silver</h3><div class="pr">₹35,000<small> onwards</small></div><ul><li>1 day traditional photography</li><li>Traditional video</li><li>300+ edited photos</li><li>1 premium album (30 sheets)</li><li>Highlight video</li></ul><a class="btn btn-gold" href="https://wa.me/919931732890?text=Hi%2C%20I%20want%20details%20of%20Silver%20package" target="_blank">Enquire</a></div>
+    <div class="pack best rv"><span class="tag">MOST LOVED</span><h3>Gold</h3><div class="pr">₹65,000<small> onwards</small></div><ul><li>2 days coverage (Haldi + Wedding)</li><li>Candid + traditional photography</li><li>Cinematic wedding film</li><li>Drone coverage</li><li>2 premium albums</li></ul><a class="btn btn-gold" href="https://wa.me/919931732890?text=Hi%2C%20I%20want%20details%20of%20Gold%20package" target="_blank">Enquire</a></div>
+    <div class="pack rv"><h3>Royal</h3><div class="pr">₹1,10,000<small> onwards</small></div><ul><li>All functions – 3 days</li><li>Pre-wedding shoot included</li><li>Cinematic film + teaser</li><li>Drone + LED live screen</li><li>Luxury album box set</li></ul><a class="btn btn-gold" href="https://wa.me/919931732890?text=Hi%2C%20I%20want%20details%20of%20Royal%20package" target="_blank">Enquire</a></div>
+  </div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <div class="title"><small>Kind Words</small><h2>Love From Our Couples</h2><div class="orn">✦</div></div>
+  <div class="tst" id="tst">
+    <div class="q on"><div class="stars">★★★★★</div><p>“Sample review – the team made us feel so comfortable. Every photo looks like a painting!”</p><b>— Couple Name, Munger</b></div>
+    <div class="q"><div class="stars">★★★★★</div><p>“Sample review – our wedding film made the whole family cry happy tears. Worth every rupee.”</p><b>— Couple Name, Bhagalpur</b></div>
+    <div class="q"><div class="stars">★★★★★</div><p>“Sample review – professional, on time and so creative. The drone shots of our baraat were amazing.”</p><b>— Couple Name, Begusarai</b></div>
+  </div>
+</div></section>
+
+<div class="band"><h2>Follow Our Latest Work</h2><p style="opacity:.9;margin-bottom:26px">New weddings, reels and behind-the-scenes every week.</p><a class="btn btn-line" href="https://www.instagram.com/shaadi_nama/" target="_blank">📷 @shaadi_nama on Instagram</a></div>
+
+<section id="contact"><div class="wrap contact">
+  <div class="cinfo rv">
+    <small style="color:var(--gold);letter-spacing:6px;font-size:12px">GET IN TOUCH</small>
+    <h3>Let's Make Your Wedding Unforgettable</h3>
+    <div class="row"><div class="ic">📍</div><div><b>Studio</b><br>Jamalpur–Munger Road, Munger, Bihar</div></div>
+    <div class="row"><div class="ic">📞</div><div><b>Call / WhatsApp</b><br><a href="tel:+919931732890">+91 99317 32890</a></div></div>
+    <div class="row"><div class="ic">📷</div><div><b>Instagram</b><br><a href="https://www.instagram.com/shaadi_nama/" target="_blank">@shaadi_nama</a></div></div>
+    <iframe class="map" loading="lazy" src="https://maps.google.com/maps?q=ShaadiNama%20Studio%20Munger&z=14&output=embed" title="Map"></iframe>
+  </div>
+  <form class="rv" id="book">
+    <h3>Book Your Date</h3>
+    <div class="two"><input placeholder="Your name" required><input placeholder="Mobile number" type="tel" required></div>
+    <div class="two"><input type="date" placeholder="Wedding date"><input placeholder="Venue / city"></div>
+    <select><option value="">Interested in</option><option>Wedding Photography</option><option>Candid + Cinematic Film</option><option>Pre-Wedding Shoot</option><option>Drone Coverage</option><option>Complete Package</option></select>
+    <textarea rows="3" placeholder="Tell us about your functions"></textarea>
+    <button class="btn btn-gold" style="width:100%;justify-content:center">Send on WhatsApp ➜</button>
+  </form>
+</div></section>
+
+<footer>
+  <a href="#home" class="brand"><div class="seal">SN</div><div style="text-align:left"><b>ShaadiNama</b><small>STUDIO • MUNGER</small></div></a>
+  <p>Wedding Photography • Candid • Cinematic Films • Pre-Wedding • Drone</p>
+  <div class="soc"><a href="https://www.instagram.com/shaadi_nama/" target="_blank" aria-label="Instagram">📷</a><a href="https://wa.me/919931732890" target="_blank" aria-label="WhatsApp">💬</a><a href="tel:+919931732890" aria-label="Call">📞</a></div>
+  <div class="credit">© <span id="yr"></span> ShaadiNama Studio. All rights reserved. &nbsp;|&nbsp; Website designed by <a href="https://rahulhits.github.io/websolution/" target="_blank">Web Solution</a></div>
+</footer>
+
+<div class="demo">✨ Free sample design by Web Solution</div>
+<a class="wa" href="https://wa.me/919931732890?text=Hi%20ShaadiNama%20Studio%2C%20I%20want%20to%20book%20a%20shoot" target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+window.addEventListener('load',()=>{const p=document.getElementById('pre');p.style.opacity=0;setTimeout(()=>p.remove(),800)});
+const nav=document.getElementById('nav');const chk=()=>nav.classList.toggle('solid',scrollY>60);addEventListener('scroll',chk,{passive:true});setInterval(chk,400);chk();
+document.getElementById('burger').onclick=()=>document.getElementById('menu').classList.toggle('open');
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+// hero slideshow
+const sl=[...document.querySelectorAll('.slide')],ds=[...document.querySelectorAll('#dots span')];let si=0;
+const go=i=>{sl[si].classList.remove('on');ds[si].classList.remove('on');si=i;sl[si].classList.add('on');ds[si].classList.add('on')};
+ds.forEach((d,i)=>d.onclick=()=>go(i));setInterval(()=>go((si+1)%sl.length),5500);
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('show');
+ e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let v=0;const st=Math.max(1,Math.ceil(n/60));const t=setInterval(()=>{v=Math.min(n,v+st);c.textContent=v+(v===n?'+':'');if(v===n)clearInterval(t)},25)});io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+// filters
+document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;
+ document.querySelectorAll('#grid .item').forEach(it=>it.classList.toggle('hide',f!=='all'&&it.dataset.c!==f))});
+// lightbox
+const lb=document.getElementById('lb'),li=lb.querySelector('img'),lc=lb.querySelector('.c');let cur=0;
+const vis=()=>[...document.querySelectorAll('#grid .item:not(.hide)')];
+const show=i=>{const v=vis();cur=(i+v.length)%v.length;li.src=v[cur].querySelector('img').src;lc.textContent=v[cur].querySelector('.cap').textContent;lb.classList.add('on')};
+document.querySelectorAll('#grid .item').forEach(it=>it.onclick=()=>show(vis().indexOf(it)));
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');lb.querySelector('.p').onclick=()=>show(cur-1);lb.querySelector('.n').onclick=()=>show(cur+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+// testimonials
+const qs=[...document.querySelectorAll('.q')];let qi=0;setInterval(()=>{qs[qi].classList.remove('on');qi=(qi+1)%qs.length;qs[qi].classList.add('on')},5000);
+// booking -> WhatsApp
+document.getElementById('book').onsubmit=e=>{e.preventDefault();const L=['💍 Booking enquiry – ShaadiNama Studio'];e.target.querySelectorAll('input,select,textarea').forEach(i=>{if(i.value)L.push((i.placeholder||'Interested in')+': '+i.value)});
+ window.open('https://wa.me/919931732890?text='+encodeURIComponent(L.join('\n')),'_blank')};
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
